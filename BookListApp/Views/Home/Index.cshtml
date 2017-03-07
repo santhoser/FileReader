@@ -1,0 +1,52 @@
+﻿@model BookListApp.Models.BookViewModel
+
+<div class="row">
+    <div class="col-md-8">
+        <h2>Book List</h2>
+       <div class="table-responsive"> 
+           <table class="table table-bordered table-striped">
+               <thead>
+                   <tr>
+                       <td>
+                           Book Title
+                       </td>
+                       <td>
+                           ISBN
+                       </td>
+                       <td>
+                           Author
+                       </td>
+                   </tr>
+               </thead>
+               <tbody>
+                   @foreach (var record in Model.Books)
+                   {
+                    <tr>
+                        <td>
+                            @record.Name
+                        </td>
+                        <td>
+                            @record.ISBN
+                        </td>
+                        <td>
+                            @record.Author
+                        </td>
+                    </tr>
+                   }
+                   
+               </tbody>
+           </table>
+       </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8 errorDiv">
+        <ul>
+            @foreach (var errorInfo in Model.Errors)
+            {
+                <li>@errorInfo.Message</li>
+            }
+        </ul>
+        
+    </div>
+    </div>
