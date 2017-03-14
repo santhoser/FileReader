@@ -95,7 +95,6 @@
     <Compile Include="BusinessLogic\BookLogicTests.cs" />
     <Compile Include="BusinessLogic\FakeFileReader.cs" />
     <Compile Include="BusinessLogic\BookResult.cs" />
-    <Compile Include="BusinessLogic\FileReaderTests.cs" />
     <Compile Include="Controllers\BookApiControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\HomeControllerTest.cs" />
