@@ -15,7 +15,7 @@ namespace BookListApp.Tests.BusinessLogic
         {
             get
             {
-                return Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName + "\\BookListApp\\Data";
+                return string.Empty;
             }
         }
 
